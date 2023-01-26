@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: appelo3
+  description: appelo3
+  labels:
+    size: small
+    environments: build-dev-qa-prod
+spec:
+  owner: diegorodrigues87
