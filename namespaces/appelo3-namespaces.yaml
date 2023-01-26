@@ -1,0 +1,56 @@
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: appelo3-build
+  labels:
+    app : appelo3
+    team: diegorodrigues87
+    build-namespace: appelo3-build
+    size: small
+    environment: build
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: appelo3-build
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: appelo3-dev
+  labels:
+    app : appelo3
+    team: diegorodrigues87
+    build-namespace: appelo3-build
+    size: small
+    environment: dev
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: appelo3-build
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: appelo3-qa
+  labels:
+    app : appelo3
+    team: diegorodrigues87
+    build-namespace: appelo3-build
+    size: small
+    environment: qa
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: appelo3-build
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: appelo3-prod
+  labels:
+    app : appelo3
+    team: diegorodrigues87
+    build-namespace: appelo3-build
+    size: small
+    environment: prod
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: appelo3-build
