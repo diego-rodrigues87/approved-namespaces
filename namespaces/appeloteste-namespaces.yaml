@@ -1,0 +1,56 @@
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: appeloteste-build
+  labels:
+    app : appeloteste
+    team: diego-rodrigues87
+    build-namespace: appeloteste-build
+    size: small
+    environment: build
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: appeloteste-build
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: appeloteste-dev
+  labels:
+    app : appeloteste
+    team: diego-rodrigues87
+    build-namespace: appeloteste-build
+    size: small
+    environment: dev
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: appeloteste-build
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: appeloteste-qa
+  labels:
+    app : appeloteste
+    team: diego-rodrigues87
+    build-namespace: appeloteste-build
+    size: small
+    environment: qa
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: appeloteste-build
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: appeloteste-prod
+  labels:
+    app : appeloteste
+    team: diego-rodrigues87
+    build-namespace: appeloteste-build
+    size: small
+    environment: prod
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: appeloteste-build
