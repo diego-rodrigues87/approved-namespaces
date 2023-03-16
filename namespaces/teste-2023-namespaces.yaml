@@ -1,0 +1,56 @@
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: teste-2023-build
+  labels:
+    app : teste-2023
+    team: Diego Rodrigues
+    build-namespace: teste-2023-build
+    size: small
+    environment: build
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: teste-2023-build
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: teste-2023-dev
+  labels:
+    app : teste-2023
+    team: Diego Rodrigues
+    build-namespace: teste-2023-build
+    size: small
+    environment: dev
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: teste-2023-build
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: teste-2023-qa
+  labels:
+    app : teste-2023
+    team: Diego Rodrigues
+    build-namespace: teste-2023-build
+    size: small
+    environment: qa
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: teste-2023-build
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: teste-2023-prod
+  labels:
+    app : teste-2023
+    team: Diego Rodrigues
+    build-namespace: teste-2023-build
+    size: small
+    environment: prod
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: teste-2023-build
